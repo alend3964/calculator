@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+    <div class=" mx-auto  px-[10rem]   ">
+    
+          <div class="p-5 pt-3  text-center text-3xl bg-zinc-950 rounded-t-3xl"><h1 class="text-white">Calculator</h1></div>
+          <input type="text" id="display" class=" h-[9rem] bg-zinc-800 text-[4rem] text-white w-full"/>
+          <div class="w-full h-[33rem] bg-zinc-950 rounded-b-3xl">
+            <div class=" text-2xl p-5 grid grid-cols-4 gap-4 text-white">
+                <button class=" shadow-md shadow-[#f8fafc] hover:bg-teal-300 p-6 bg-zinc-500 rounded-full" onclick="clearup()">AC</button>
+                <button class=" shadow-md shadow-[#f8fafc] hover:bg-teal-300 p-6 bg-zinc-500 rounded-full" onclick="project('')">⌫</button>
+                <button class="shadow-md shadow-[#f8fafc] hover:bg-teal-300 p-6 bg-zinc-500 rounded-full" onclick="project('sqrt()')">√</button>
+                <button class="shadow-md shadow-[#fde68a] hover:bg-teal-300 p-6 bg-amber-500 rounded-full" onclick="project('/')">/</button>
+                <button class="shadow-md shadow-[#71717a] hover:bg-teal-300 p-6 bg-neutral-800 rounded-full" onclick="project('9')">9</button>
+                <button class="shadow-md shadow-[#71717a] hover:bg-teal-300 p-6 bg-neutral-800 rounded-full" onclick="project('8')">8</button>
+                <button class="shadow-md shadow-[#71717a] hover:bg-teal-300 p-6 bg-neutral-800 rounded-full" onclick="project('7')">7</button>
+                <button class="shadow-md shadow-[#fde68a] hover:bg-teal-300 p-6 bg-amber-500 rounded-full" onclick="project('*')">*</button>
+                <button class="shadow-md shadow-[#71717a] hover:bg-teal-300 p-6 bg-neutral-800 rounded-full" onclick="project('6')">6</button>
+                <button class="shadow-md shadow-[#71717a] hover:bg-teal-300 p-6 bg-neutral-800 rounded-full" onclick="project('5')">5</button>
+                <button class="shadow-md shadow-[#71717a] hover:bg-teal-300 p-6 bg-neutral-800 rounded-full" onclick="project('4')">4</button>
+                <button class="shadow-md shadow-[#fde68a] hover:bg-teal-300 p-6 bg-amber-500 rounded-full" onclick="project('-')">-</button>
+                <button class="shadow-md shadow-[#71717a] hover:bg-teal-300 p-6 bg-neutral-800 rounded-full" onclick="project('3')">3</button>
+                <button class="shadow-md shadow-[#71717a] hover:bg-teal-300 p-6 bg-neutral-800 rounded-full" onclick="project('2')">2</button>
+                <button class="shadow-md shadow-[#71717a] hover:bg-teal-300 p-6 bg-neutral-800 rounded-full" onclick="project('1')">1</button>
+                <button class="shadow-md shadow-[#fde68a] hover:bg-teal-300 p-6 bg-amber-500 rounded-full" onclick="project('+')">+</button>
+                <button class="shadow-md shadow-[#71717a] hover:bg-teal-300 p-6 bg-neutral-800 rounded-full" onclick="project('0')">0</button>
+                <button class="shadow-md shadow-[#71717a] hover:bg-teal-300 p-6 bg-neutral-800 rounded-full" onclick="project('00')">00</button>
+                <button class="shadow-md shadow-[#71717a] hover:bg-teal-300 p-6 bg-neutral-800 rounded-full" onclick="project('.')">.</button>
+                <button class="shadow-md shadow-[#fde68a] hover:bg-teal-300 p-6 bg-amber-500 rounded-full" onclick="calculate()">=</button>
+                
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="cal.js"></script>
+
+</body>
+</html>
